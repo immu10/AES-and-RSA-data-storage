@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Patient Name",
+    "type": "text_input",
+    "key": "name",
+    "required": true
+  },
+  {
+    "label": "Age",
+    "type": "number_input",
+    "key": "age",
+    "min": 0,
+    "max": 150
+  },
+  {
+    "label": "Gender",
+    "type": "selectbox",
+    "key": "gender",
+    "options": ["Male", "Female", "Other", "Prefer not to say"]
+  },
+  {
+    "label": "Diagnosis",
+    "type": "text_area",
+    "key": "diagnosis",
+    "required": true
+  },
+  {
+    "label": "Treatment Plan",
+    "type": "text_area",
+    "key": "treatment"
+  },
+  {
+    "label": "Doctor Notes",
+    "type": "text_area",
+    "key": "notes"
+  }
+]

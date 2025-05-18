@@ -1,0 +1,23 @@
+{
+  "harsha": {
+    "password": "$2b$12$u2rM44IBHh/Mpkz9ZqSRA.N.2XYIYQvAX9w1GDSOZAjosJxlhErUS",
+    "attributes": [
+      "Nurse"
+    ],
+    "can_write": true
+  },
+  "admin": {
+    "password": "$2b$12$UyKV2udN3huBWXqcnD8BcOd/HUE7AdqM/VQBPoRdqPRxbCrbg1rTS",
+    "attributes": [
+      "Admin"
+    ],
+    "can_write": true
+  },
+  "admin1": {
+    "password": "$2b$12$OICT0MuhiYRyV30uHMfLWOBC4i94LyqiG9qI3tKuVwe8ogPhgJw0C",
+    "attributes": [
+      "Admin"
+    ],
+    "can_write": true
+  }
+}
