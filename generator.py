@@ -1,3 +1,5 @@
+#run this to generate keys, required to set up rsa keys before the site works
+
 from Crypto.PublicKey import RSA
 import os
 

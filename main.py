@@ -5,6 +5,9 @@ from login import verify_login, get_user_attributes, can_user_write
 from create_user import create_user
 from data import encrypt_data, decrypt_data
 import json
+import pandas as pd
+from datetime import datetime
+
 
 st.set_page_config(page_title="Secure Health Records", layout="centered")
 st.title("Secure Health Record System")
@@ -275,9 +278,6 @@ elif menu == "Dashboard":
         st.write(f"• **{user}**: {count} record(s)")
 
     # Optional: Timestamp trend
-    import pandas as pd
-    from datetime import datetime
-
     st.subheader("Records Over Time")
     timestamps = [datetime.fromisoformat(rec["timestamp"]) for rec in records if "timestamp" in rec]
 
