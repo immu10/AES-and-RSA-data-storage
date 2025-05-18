@@ -1,0 +1,55 @@
+# Secure Hospital Database
+
+A role-based secure hospital record management system built with Streamlit. This application encrypts and decrypts patient data using a combination of RSA and AES cryptography, with user access controlled by roles and permissions.
+
+## Overview
+
+This project enables secure storage and management of hospital records. Users with different roles (Admin, Doctor, Nurse, Intern) have different access and write permissions. Data encryption keys persist across sessions, ensuring reliable access and enhanced security.
+
+## Features
+
+- Role-based authentication and authorization
+- RSA + AES hybrid encryption for secure record storage
+- Persistent encryption keys enabling data access across sessions
+- User management with Admin control panel for creating accounts and managing permissions
+- Encryption and decryption of medical records through an easy-to-use interface
+- Search functionality to filter patient records by name or diagnosis
+- Admin dashboard displaying system statistics and record summaries
+
+## Usage
+
+- **Login:** Users log in with their credentials. Admin users can create accounts and manage permissions.
+
+- **Sign Up:** New accounts require an admin override code or admin privileges.
+
+- **Encrypt:** Authorized users can encrypt and save new patient records.
+
+- **Decrypt:** Users can view decrypted records based on their role and permissions.
+
+- **Admin Panel:** Admin users can revoke user access and manage intern write permissions.
+
+- **Dashboard:** Displays key statistics about records and users.
+
+## Project Structure
+
+- `main.py` — Main Streamlit app handling UI and routing.
+
+- `login.py` — User authentication and role verification.
+
+- `create_user.py` — User registration logic.
+
+- `data.py` — Encryption and decryption functions.
+
+- `fields.json` — Defines input fields for medical records.
+
+- `records.txt` — Encrypted medical records storage.
+
+- `logins.txt` — User credentials and roles storage.
+
+## Security Notes
+
+- The registration override code is hardcoded for demonstration and should be replaced with a secure method in production.
+
+- User passwords and sensitive data should be stored securely (hashed and salted) — please review before deployment.
+
+- This project is a prototype and should be audited for security before use in a real hospital environment.
