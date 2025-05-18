@@ -5,6 +5,7 @@ from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
 import base64
 import json
+import datetime
 import os
 
 BLOCK_SIZE = 16
@@ -22,12 +23,6 @@ def unpad(data):
     return data[:-ord(data[-1])]
 
 def encrypt_data(data, username):
-    from Crypto.Cipher import AES, PKCS1_OAEP
-    from Crypto.Random import get_random_bytes
-    import datetime
-    import base64
-    import os, json
-
     aes_key = get_random_bytes(16)
     iv = get_random_bytes(16)
     cipher = AES.new(aes_key, AES.MODE_CBC, iv)
