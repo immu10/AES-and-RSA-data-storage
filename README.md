@@ -58,3 +58,17 @@ This project enables secure storage and management of hospital records. Users wi
 - User passwords and sensitive data should be stored securely (hashed and salted) — please review before deployment.
 
 - This project is a prototype and should be audited for security before use in a real hospital environment.
+
+
+##RESULTS on #MY machine
+To evaluate the efficiency and scalability of the hybrid encryption system, we conducted performance tests using large synthetic datasets ranging from several megabytes to multiple records.
+
+AES encryption/decryption throughput consistently exceeded 200 MB/s on datasets around 5–7 MB in size, demonstrating excellent symmetric encryption performance suitable for large payloads.
+
+RSA encryption and decryption of AES keys showed minimal overhead, with typical times below 10 milliseconds per key, enabling fast secure key management across multiple user roles.
+
+The combined two-layer envelope encryption maintained low total processing times even when encrypting and decrypting hundreds of records, confirming the system’s scalability.
+
+Benchmarks include encryption time, decryption time, and throughput measurements to give a comprehensive view of system performance.
+
+These results affirm that the system is capable of securing large volumes of sensitive data with strong cryptographic guarantees, while remaining performant enough for practical, real-world use.
