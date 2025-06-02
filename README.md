@@ -1,6 +1,6 @@
-# Secure Hospital Database
+# Secure data storage using RSA and AES
 
-A role-based secure hospital record management system built with Streamlit. This application encrypts and decrypts patient data using a combination of RSA and AES cryptography, with user access controlled by roles and permissions.
+A secure data storage project built to demonstrate hybrid encryption using **AES and RSA**. This system showcases how sensitive information can be encrypted, stored, and selectively accessed based on user roles. To illustrate the concept, a simplified hospital record management scenario is used, where different roles (like doctors and admins) can access encrypted records depending on their assigned permissions. The frontend is built using **Streamlit** to simulate real-time role-based access.
 
 ## Overview
 
