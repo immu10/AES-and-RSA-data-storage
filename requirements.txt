@@ -1,4 +1,6 @@
 bcrypt
 streamlit
 pandas
+pycryptodome
+
 
