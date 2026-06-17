@@ -171,3 +171,8 @@ This design simulates **Attribute-Based Encryption (ABE)** behavior — a record
 - User passwords and sensitive data should be stored securely (hashed and salted) — please review before deployment.
 
 - This project is a prototype and should be audited for security before use in a real hospital environment.
+
+
+## Tags
+
+AES · RSA ·  Envelope Encryption
